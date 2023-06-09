@@ -112,23 +112,23 @@ main{
 <body>
     <header>
         <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-black ">
-            <div class="container-fluid id=demo">
+            <div class="container-fluid">
                
                <a class="navbar-brand" href="#"><img src="motivitylogo.png"/></a>
-               <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#"> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-                <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
+               <ul class="navbar-nav ms-auto d-sm-none ">
+                <li class="nav-item menuitems"><a class="nav-link" href="#"> Home</a></li>
+                <li class="nav-item menuitems"><a class="nav-link" href="#"> About </a></li>
+                <li class="nav-item menuitems"><a class="nav-link" href="#"> Contact</a></li>
                 
                 </li>
             
-            <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <button class="btn btn-primary d-lg-none d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
                 Open Offcanvas Sidebar
               </button>
             </ul>
          </div> 
         </nav>
-         <div class="offcanvas offcanvas-start offcanvas-lg" >
+         <div class="offcanvas offcanvas-start offcanvas-lg" id="demo">
             <div class="offcanvas-header">
               <h1 class="offcanvas-title">Menu</h1>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
